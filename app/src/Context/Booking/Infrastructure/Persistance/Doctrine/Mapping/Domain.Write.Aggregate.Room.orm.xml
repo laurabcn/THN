@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Context\Booking\Domain\Write\Aggregate\Room"
+            table="rooms">
+        <id name="id" column="id" type="string">
+            <generator strategy="NONE"/>
+        </id>
+        <field name="capacity" type="integer" />
+        <field name="userId" />
+        <field name="name" />
+        <field name="bedsTwin" type="integer" />
+        <field name="fullBeds" type="integer" />
+        <field name="checkIn" />
+        <field name="checkOut" />
+    </entity>
+
+</doctrine-mapping>

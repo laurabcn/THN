@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+hotel:
+  path: /hotel/{hotel_id}
+  controller: App\Context\Hotel\UI\Controller\GetInformationController::__invoke
+  methods:  [GET]
+
+booking:
+  path: /booking
+  controller: App\Context\Booking\UI\Controller\GetBookingByCheckInController::__invoke
+  methods:  [GET]
+
+users:
+  path: /booking/users
+  controller: App\Context\Booking\UI\Controller\GetUsersByCheckInController::__invoke
+  methods:  [GET]

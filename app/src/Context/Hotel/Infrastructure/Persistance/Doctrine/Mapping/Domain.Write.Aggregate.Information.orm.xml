@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Context\Hotel\Domain\Write\Aggregate\Information"
+            table="information">
+        <id name="id" column="id" type="string">
+            <generator strategy="NONE"/>
+        </id>
+        <field name="name"/>
+        <field name="numTotalRooms" type="integer" />
+        <field name="rating" type="integer" />
+        <field name="wifi" type="boolean" />
+        <field name="pool" type="boolean" />
+        <field name="parking" type="boolean" />
+        <field name="petsAllowed" type="boolean" />
+        <field name="bar" type="boolean" />
+        <field name="cityView" type="boolean"/>
+        <field name="smooking" type="boolean"/>
+        <field name="description"/>
+    </entity>
+
+</doctrine-mapping>
