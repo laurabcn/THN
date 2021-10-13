@@ -6,7 +6,8 @@ Docker and docker-compose optionally GNU Make, tested on Mac OS
 
 For build this api, type on terminal `make dev`. And It's available to http::/localhost:8080.
 
-Import data bases on file `MYSQL_THN.zip`
+Import data bases on file `MYSQL_THN.zip`, previously run this on mysql terminal `create database thn;
+create database thn_test`;
 
 You can read the make file for make tests (make test-unit, make test-acceptance). It
 
